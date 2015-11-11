@@ -1,0 +1,32 @@
+<h1>Table</h1>
+
+<style>
+  body {
+    text-align: center;
+  }
+  table {
+    margin: auto;
+  }
+  thead {
+    background: lightblue;
+  }
+</style>
+
+<table class="table-hover table-striped table-bordered" width="50%">
+  <thead>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Account Number</td>
+    <td>Email Address</td>
+  </thead>
+  <% @information.each do |hash| %>
+    <tr>
+    <% hash.each do |key, value| %>
+      <td><%= "#{value}" %></td>
+    <% end %>
+    </tr>
+  <% end %>
+
+</table>
+<br>
+<br>

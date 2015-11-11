@@ -1,0 +1,10 @@
+<h1>Lottery numbers</h1>
+<p>Your random lottery numbers are:</p>
+
+<ul>
+<% @random_numbers.each do |num| %>
+  <li><%= "#{num}" %></li>
+<% end %>
+</ul>
+
+
